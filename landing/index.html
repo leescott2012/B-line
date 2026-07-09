@@ -7,23 +7,22 @@
 <meta name="description" content="Turn-by-turn navigation, live-feeling crowd info, and business discovery built specifically for the Atlanta BeltLine.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    /* matched to beltline.org's own brand colors */
-    --ground: #071914;
-    --raised: #14332b;
-    --accent: #dfea8a;
-    --accent-ink: #071914;
-    --leaf: #68b644;
-    --cream: #f4f4ee;
-    --ink: #eef2e9;
-    --muted: #9db3a4;
+    /* Rail & Rust — freight-rail heritage: steel, warehouses, oxidized rail-orange */
+    --ground: #1c1a17;
+    --raised: #262320;
+    --border: #3a352e;
+    --ink: #f0ebe0;
+    --muted: #a89c8a;
+    --accent: #d9541f;
+    --pop: #ff3d6f;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    font-family: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     background: var(--ground);
     color: var(--ink);
     line-height: 1.5;
@@ -35,23 +34,28 @@
   }
   .badge {
     display: inline-block;
-    background: rgba(223,234,138,0.12);
-    border: 1px solid rgba(223,234,138,0.35);
-    color: var(--accent);
+    background: rgba(217,84,31,0.16);
+    border: 1px solid rgba(217,84,31,0.4);
+    color: #ffab84;
     padding: 6px 14px;
     border-radius: 999px;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 22px;
   }
   h1 {
-    font-size: clamp(2rem, 5vw, 2.9rem);
-    line-height: 1.15;
+    font-family: "Oswald", "Arial Narrow", -apple-system, sans-serif;
+    font-size: clamp(2.1rem, 5.5vw, 3.1rem);
+    line-height: 1.1;
     margin: 0 0 18px;
-    font-weight: 800;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.005em;
     color: #ffffff;
   }
+  h1 .accent { color: var(--accent); }
   .sub {
     font-size: clamp(1.05rem, 2.5vw, 1.25rem);
     color: var(--muted);
@@ -71,32 +75,32 @@
     flex: 1 1 260px;
     padding: 14px 16px;
     font-size: 1rem;
-    border: 2px solid var(--raised);
+    border: 2px solid var(--border);
     border-radius: 8px;
     background: var(--raised);
     color: var(--ink);
     font-family: inherit;
   }
-  input[type="email"]::placeholder { color: var(--muted); }
+  input[type="email"]::placeholder { color: #8b8478; }
   input[type="email"]:focus { outline: none; border-color: var(--accent); }
   button[type="submit"] {
     padding: 14px 26px;
     font-size: 1rem;
     font-weight: 700;
-    background: var(--accent);
-    color: var(--accent-ink);
+    background: var(--pop);
+    color: #1c1a17;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-family: inherit;
   }
-  button[type="submit"]:hover { background: var(--leaf); color: #071914; }
+  button[type="submit"]:hover { background: var(--accent); color: #fff; }
   .fineprint { font-size: 0.85rem; color: var(--muted); margin-top: 10px; }
   .biz {
     margin-top: 64px;
     padding: 28px;
     background: var(--raised);
-    border: 1px solid rgba(223,234,138,0.15);
+    border: 1px solid var(--border);
     border-radius: 12px;
   }
   .biz h2 { margin-top: 0; font-size: 1.3rem; color: #ffffff; }
@@ -121,7 +125,7 @@
 <header class="hero">
   <div class="wrap">
     <span class="badge">Coming to the Atlanta BeltLine</span>
-    <h1>The BeltLine finally has a navigation app.</h1>
+    <h1>The BeltLine finally has <span class="accent">a navigation app.</span></h1>
     <p class="sub">Turn-by-turn directions, how-busy-is-it-right-now info, and the best spots to stop — built for the 22-mile loop, not bolted onto a generic map.</p>
   </div>
 </header>
