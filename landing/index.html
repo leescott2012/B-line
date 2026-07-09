@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B-line — The BeltLine finally has a navigation app</title>
+<meta name="description" content="Turn-by-turn navigation, live-feeling crowd info, and business discovery built specifically for the Atlanta BeltLine.">
+<style>
+  :root {
+    --green: #1b6b4a;
+    --green-dark: #0f4a32;
+    --cream: #faf7f0;
+    --ink: #1a1a1a;
+    --muted: #5a5a52;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.5;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  header.hero {
+    background: linear-gradient(160deg, var(--green) 0%, var(--green-dark) 100%);
+    color: white;
+    padding: 72px 0 64px;
+    text-align: center;
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: clamp(2rem, 5vw, 2.9rem);
+    line-height: 1.15;
+    margin: 0 0 18px;
+    font-weight: 700;
+  }
+  .sub {
+    font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+    color: rgba(255,255,255,0.92);
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  main { padding: 56px 0 40px; }
+  .body-copy { font-size: 1.08rem; color: var(--ink); }
+  .body-copy p { margin: 0 0 18px; }
+  form.waitlist {
+    margin-top: 36px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  input[type="email"] {
+    flex: 1 1 260px;
+    padding: 14px 16px;
+    font-size: 1rem;
+    border: 2px solid #d8d3c4;
+    border-radius: 8px;
+    background: white;
+  }
+  input[type="email"]:focus { outline: none; border-color: var(--green); }
+  button[type="submit"] {
+    padding: 14px 26px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  button[type="submit"]:hover { background: var(--green-dark); }
+  .fineprint { font-size: 0.85rem; color: var(--muted); margin-top: 10px; }
+  .biz {
+    margin-top: 64px;
+    padding: 28px;
+    background: white;
+    border: 1px solid #e8e3d4;
+    border-radius: 12px;
+  }
+  .biz h2 { margin-top: 0; font-size: 1.3rem; }
+  .biz a.cta {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--green);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .biz a.cta:hover { text-decoration: underline; }
+  footer {
+    text-align: center;
+    padding: 32px 0 48px;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Coming to the Atlanta BeltLine</span>
+    <h1>The BeltLine finally has a navigation app.</h1>
+    <p class="sub">Turn-by-turn directions, how-busy-is-it-right-now info, and the best spots to stop — built for the 22-mile loop, not bolted onto a generic map.</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="body-copy">
+      <p>Google Maps treats the BeltLine like a regular street. It's not — it's a 22-mile trail with thousands of people on it every day, and there's never been an app built specifically for walking, running, or biking it.</p>
+      <p>B-line is that app: real navigation along the trail, a sense of how crowded a segment usually is before you get there, and the restaurants, shops, and dog-friendly spots worth a detour — plus an immersive preview of key segments before you ever step outside.</p>
+      <p><strong>We're building it now.</strong> Get on the list to be first in when it's ready.</p>
+    </div>
+
+    <form class="waitlist" action="https://formsubmit.co/leescott2019@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New B-line waitlist signup">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="thanks.html">
+      <input type="hidden" name="_template" value="table">
+      <input type="email" name="email" placeholder="you@email.com" required aria-label="Email address">
+      <button type="submit">Join the waitlist</button>
+    </form>
+    <p class="fineprint">No spam — just a heads up when B-line is ready to try, and nothing else.</p>
+
+    <div class="biz">
+      <h2>Own a business on or near the BeltLine?</h2>
+      <p>We're looking for a handful of Founding Sponsors before launch — featured placement, a permanent Founding Sponsor badge, and a locked-in rate before public pricing.</p>
+      <a class="cta" href="mailto:leescott2019@gmail.com?subject=B-line%20Founding%20Sponsor">Get in touch →</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">B-line &middot; built for the Atlanta BeltLine &middot; not affiliated with Atlanta BeltLine Inc.</div>
+</footer>
+
+</body>
+</html>
